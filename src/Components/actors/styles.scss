@@ -1,0 +1,98 @@
+.actors-carousel{
+    .carousel-f {
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
+     overflow: hidden;
+}
+  
+  .carousel__wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 10px;
+    padding: 10px;
+    scrollbar-width: none; // Firefox uchun
+    -ms-overflow-style: none; // IE va Edge uchun
+  }
+  
+  .carousel__wrapper::-webkit-scrollbar {
+    display: none; // Chrome va Safari uchun
+  }
+  
+  .carousel__item {
+    display: flex;
+    gap: 10px;
+    flex: 0 0 auto;
+    min-width: 300px;
+  }
+  
+  .carousel__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius:5px;
+    z-index: 10;
+  }
+  
+  .carousel__btn.left {
+    left: 0;
+  }
+  
+  .carousel__btn.right {
+    right: 0;
+  }
+  
+  .carousel__btn:hover {
+    background: rgba(0, 0, 0, 0.9);
+  }
+  
+  .movie {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   .slider-play{
+    background-color: transparent;
+    border: none;
+    color: blue;
+    text-align: left;
+   }
+   }
+  
+  .movie__img {
+    width: 200px;
+    height: 200px;
+        border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    &:hover{
+        transform: scale(1.04);
+        transition: all .5s;
+    }
+  }
+  .movie__jop{
+    color: rgb(189, 183, 183);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .movie__title {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+.title-f{
+    color: white;
+    span{
+        font-weight: bold;
+        font-size: 40px;
+        color: yellow;
+    }
+}
+
+}

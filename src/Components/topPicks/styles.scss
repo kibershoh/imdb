@@ -1,0 +1,204 @@
+.movie-list {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #181818;
+    padding: 15px;
+  }
+  
+  .movie-card {
+    width: 200px;
+    background: #222;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    // text-align: center;
+    position: relative;
+  
+   
+  
+    .movie-image {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-top-right-radius: 8px;
+    }
+  
+    .movie-info {
+      margin-top: 0;
+      padding: 10px;
+      padding-top: 0;
+  
+      .rating {
+        display: flex;
+        align-items: center;
+        // gap: 15px;
+       button{
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        color: yellow;
+        font-size: 16px;
+        font-weight: bold;
+        gap: 10px;
+       }
+       :nth-child(2){
+        color: blue;
+       }
+       
+      }
+  
+      .title {
+        font-size: 14px;
+        margin: 5px 0;
+        height: 30px;
+        font-family: "Roboto Serif", serif;
+    }
+  
+      button {
+        width: 100%;
+        padding: 6px;
+        border-radius: 5px;
+        margin-top: 5px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+  
+      .watchlist-btn {
+        background: #3b3b3b;
+        color: white;
+        border: none;
+        &:hover {
+          background: #353535;
+        }
+      }
+  
+      
+    }
+  
+    .save-btn {
+      position: absolute;
+      top: 4px;
+      left: 0;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+    }
+  
+    .info-btn {
+        padding: 15px;
+      display: flex;
+      justify-content: space-between;
+        align-items: center;
+      .trailer-btn {
+        background: transparent;
+        border: none;
+        color: white;
+        &:hover {
+          background: #353535;
+        }
+      }
+    }
+  }
+
+//   
+.movie-carousel{
+    .carousel-f {
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
+     overflow: hidden;
+}
+  
+  .carousel__wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 10px;
+    padding: 10px;
+    scrollbar-width: none; // Firefox uchun
+    -ms-overflow-style: none; // IE va Edge uchun
+  }
+  
+  .carousel__wrapper::-webkit-scrollbar {
+    display: none; // Chrome va Safari uchun
+  }
+  
+  .carousel__item {
+    display: flex;
+    gap: 10px;
+    flex: 0 0 auto;
+    min-width: 300px;
+  }
+  
+  .carousel__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius:5px;
+    z-index: 10;
+  }
+  
+  .carousel__btn.left {
+    left: 0;
+  }
+  
+  .carousel__btn.right {
+    right: 0;
+  }
+  
+  .carousel__btn:hover {
+    background: rgba(0, 0, 0, 0.9);
+  }
+  
+  .movie {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   .slider-play{
+    background-color: transparent;
+    border: none;
+    color: blue;
+    text-align: left;
+   }
+   }
+  
+  .movie__img {
+    width: 250px;
+    height: 200px;
+        border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    &:hover{
+        transform: scale(1.04);
+        transition: all .5s;
+    }
+  }
+  
+  .movie__title {
+    margin-top: 5px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+.title-f{
+    span{
+        color: yellow;
+        font-size: 35px;
+        font-weight: 700;
+    }
+    color: white;
+}
+
+}
+  

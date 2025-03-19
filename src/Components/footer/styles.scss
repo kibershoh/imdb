@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 20px;
+
+
+.footer-top {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding-bottom: 20px;
+}
+
+.footer-social {
+  background-color: #111;
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.footer-app {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  height: 150px;
+  background-color: #111;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: left;
+  
+}
+
+.footer-social h3,
+.footer-app h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.footer-app p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 35px;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.footer-icons svg {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-icons svg:hover {
+  color: #f5c518;
+}
+
+.footer-qr {
+  width: 60px;
+  height: 60px;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/QR_code_for_mobile_English_Wikipedia.svg/200px-QR_code_for_mobile_English_Wikipedia.svg.png")
+    no-repeat center/cover;
+  margin-top: 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px 0;
+}
+
+.footer-links a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #f5c518;
+}
+
+.footer-bottom {
+  font-size: 14px;
+  color: #666;
+  padding-top: 10px;
+}
+
+.footer-bottom .amazon {
+  font-weight: bold;
+  color: #f5c518;
+}}
+
+@media (max-width: 850px) {
+  .footer {
+    .footer-top {
+      flex-direction: column;
+    }
+  }
+}
